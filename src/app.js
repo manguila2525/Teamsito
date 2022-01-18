@@ -14,7 +14,7 @@ app.use(cors())
 
 //ROUTES
 app.use('/api/users', require('./routes/users.routes'))
-
+app.use('/api/videos', require('./routes/videos.routes'))
 
 //SERVER LISTEN
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))

@@ -11,15 +11,4 @@ const getUsers = async (req, res) => {
   }
 }
 
-const createUser = async (req, res) => {
-  try {
-
-    const user = await Users.create(req.body)
-    res.json(user)
-  } catch (e) {
-    res.json(e)
-  }
-}
-
-
-module.exports = { getUsers, createUser }
+module.exports = { getUsers }
